@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   post '/login' => 'sessions#create'
+  get '/logout' => 'users#new'
 end
