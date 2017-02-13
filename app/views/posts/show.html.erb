@@ -11,10 +11,10 @@
 </p>
 
 <p>
-  <strong>Github:</strong>
-  <%= @post.github %>
+  <% if @post.github.present? %>
+  <strong>Github:</strong> <%= link_to @post.github, @post.github  %>
+  <% end %>
 </p>
-
 
 <h3>Comments</h3>
 <%= form_for(@comment) do |f| %>
@@ -35,10 +35,10 @@
     <%= f.text_area :body %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :post_id %>
     <%= f.text_field :post_id %>
-  </div>
+  </div> -->
 
   <div class="actions">
     <%= f.submit %>
