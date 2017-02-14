@@ -23,7 +23,7 @@
 
   <tbody>
     <% @posts.each do |post| %>
-      <tr>
+      <tr id="individual_posts">
         <td><%= post.title %></td>
         <td><%= post.description %></td>
         <td><%  post.github %>
