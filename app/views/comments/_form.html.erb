@@ -16,10 +16,14 @@
     <%= f.text_area :body %>
   </div>
 
+<% if @post.nil? %>
   <div class="field">
     <%= f.label :post_id %>
     <%= f.text_field :post_id %>
   </div>
+<% else %>
+  <%= f.hidden_field :post_id, value: @post.id %>
+<% end %>
 
   <div class="actions">
     <%= f.submit %>
