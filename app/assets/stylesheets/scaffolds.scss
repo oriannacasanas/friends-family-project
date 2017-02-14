@@ -16,7 +16,7 @@ background-image:         linear-gradient(to right, #10f4ea, #fdfcfb);
   margin: 33px;
 }
 
-p, ol, ul, td {
+p, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -97,6 +97,11 @@ label {
   display: block;
 }
 
+tr{
+  border-color: turquoise;
+  border-width: thin;
+}
+
 
 .container{
   background:rgba(0,0,0,0.5);
@@ -115,7 +120,18 @@ label {
 }
 
 #posts_board{
+  align-content: center;
+}
 
+#postings{
+  background-color: white;
+  display: block;
+  color: grey;
+  border-radius: 20px;
+  display: flex-block;
+  justify-content: center;
+  border-bottom: 3px;
+  border-color: grey;
 }
 
 #slothy{
