@@ -46,8 +46,9 @@
 <% end %>
 
 <% @post.comments.each do |comment| %>
+ <h1> WTF? <%= comment.id.inspect %> </h1>
   <p>
-    <%= comment.body %>
+    <%= comment.id %>
     <br>
     Added on: <%= comment.created_at %>
   </p>
