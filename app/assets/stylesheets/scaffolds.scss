@@ -1,4 +1,13 @@
 body {
+  background-image: -webkit-linear-gradient(left, #10f4ea, #fdfcfb);
+   /* For Chrome and Safari */
+background-image:    -moz-linear-gradient(left, #10f4ea, #fdfcfb);
+ /* For old Fx (3.6 to 15) */
+background-image:     -ms-linear-gradient(left, #10f4ea, #fdfcfb);
+/* For pre-releases of IE 10*/
+background-image:      -o-linear-gradient(left, #10f4ea, #fdfcfb);
+/* For old Opera (11.1 to 12.0) */
+background-image:         linear-gradient(to right, #10f4ea, #fdfcfb);
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -86,4 +95,35 @@ div {
 
 label {
   display: block;
+}
+
+
+.container{
+  background:rgba(0,0,0,0.5);
+  border-radius: 20px;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+
+}
+.new_info{
+  background:rgba(255,255,255,0.75);
+  border-radius: 20px;
+  color: black;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+#posts_board{
+
+}
+
+#slothy{
+  padding: auto;
+  justify-content: center;
+   -webkit-transition: opacity 10s ease-in;
+   -moz-transition: opacity 10s ease-in;
+   -o-transition: opacity 10s ease-in;
+   -ms-transition: opacity 10s ease-in;
+   transition: opacity 10s ease-in;
 }
