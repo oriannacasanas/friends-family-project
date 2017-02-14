@@ -24,12 +24,14 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
+
     @comment = current_user.comments.build(comment_params)
+    @post = Post.find(params[:post_id])
     # @comment = current_user.posts.find(@post.id).comments.build(comment_params)
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
+        format.html { redirect_to post_path(@post.id), notice: 'Comment was successfully created.' }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new }
@@ -46,7 +48,7 @@ class CommentsController < ApplicationController
         format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
         format.json { render :show, status: :ok, location: @comment }
       else
-        format.html { render :edit }
+        format.html { render '/' }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end

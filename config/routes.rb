@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   # resources :links
 
   root to: "users#new"

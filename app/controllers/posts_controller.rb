@@ -14,8 +14,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    # @comment = @post.comments.new(user: current_user)
-    @comment = Comment.new(user: current_user, post_id: @post.id)
+    @comment = @post.comments.new(user: current_user)
+    # @comment = Comment.new(user: current_user, post_id: @post.id)
 
   end
 
