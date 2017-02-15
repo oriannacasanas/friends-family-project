@@ -1,3 +1,8 @@
+
+<div id="back">
+<div id="front">
+
+
 <p id="notice"><%= notice %></p>
 
 <% if current_user %>
@@ -15,7 +20,7 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <!-- <th>Github</th> -->
+      <th>Github</th>
       <th>Last Comment</th>
       <th colspan="3"></th>
     </tr>
@@ -28,9 +33,9 @@
         <td><%= post.description %></td>
         <td><%  post.github %>
         <td><%= post.comments.last.try(:body) %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="mod"><%= link_to 'Show', post %></td>
+        <td class="mod"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="mod"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
 
     <% end %>
@@ -42,3 +47,6 @@
 </div>
 
 <%= link_to 'New Post', new_post_path %>
+
+</div>
+</div>

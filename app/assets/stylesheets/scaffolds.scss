@@ -1,19 +1,33 @@
 body {
-  background-image: -webkit-linear-gradient(left, #10f4ea, #fdfcfb);
-   /* For Chrome and Safari */
-background-image:    -moz-linear-gradient(left, #10f4ea, #fdfcfb);
- /* For old Fx (3.6 to 15) */
-background-image:     -ms-linear-gradient(left, #10f4ea, #fdfcfb);
-/* For pre-releases of IE 10*/
-background-image:      -o-linear-gradient(left, #10f4ea, #fdfcfb);
-/* For old Opera (11.1 to 12.0) */
-background-image:         linear-gradient(to right, #10f4ea, #fdfcfb);
+  background: linear-gradient(285deg, #50f0da, #f6faf9);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 39s ease infinite;
+  -moz-animation: AnimationName 39s ease infinite;
+  animation: AnimationName 39s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+
 }
 
 p, ol, ul{
@@ -52,6 +66,8 @@ td {
   padding-right: 10px;
   border-color: turquoise;
   border-bottom-style: solid;
+  max-width: 700px;
+  min-width: 100px;
 }
 
 div {
@@ -113,6 +129,11 @@ label {
   color: white;
   padding: 20px 20px 20px 20px;
   text-align: center;
+  width: auto;
+  max-width: 1100px;
+
+
+
 
 }
 .new_info{
@@ -121,10 +142,12 @@ label {
   color: black;
   padding: 20px 20px 20px 20px;
   text-align: center;
+  width: auto;
 }
 
 #posts_board{
   align-content: center;
+
 }
 
 #postings{
@@ -139,6 +162,11 @@ label {
   padding: 10px;
 }
 
+.mod {
+  padding: 10px;
+  max-width: 40px;
+}
+
 #slothy{
   padding: auto;
   justify-content: center;
@@ -148,3 +176,6 @@ label {
    -ms-transition: opacity 10s ease-in;
    transition: opacity 10s ease-in;
 }
+
+
+//////////////////////////////////////////////
