@@ -1,3 +1,11 @@
+.title {
+  font-size: 5em;
+}
+
+.action-title {
+  font-size: 1em;
+}
+
 body {
   background: linear-gradient(285deg, #50f0da, #f6faf9);
   background-size: 400% 400%;
@@ -76,6 +84,7 @@ div {
   }
 }
 
+
 #notice {
   color: green;
 }
@@ -131,7 +140,8 @@ label {
   text-align: center;
   width: auto;
   max-width: 1100px;
-  margin-left: 4em;
+  margin-top: 7em;
+  margin-left: 9em;
 
 
 

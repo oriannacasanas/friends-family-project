@@ -34,7 +34,7 @@
       <tr id="individual_posts">
         <td><%= post.title %></td>
         <td><%= post.description %></td>
-        <td><%  post.github %>
+        <td><%  post.github %><br>
         <td><%= post.comments.last.try(:body) %></td>
         <td class="mod"><%= link_to 'Show', post %></td>
         <td class="mod"><%= link_to 'Edit', edit_post_path(post) %></td>
